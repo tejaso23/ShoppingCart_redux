@@ -1,0 +1,103 @@
+@import "color";
+
+
+.cart{
+    height:100vh;
+    display: grid;
+    grid-template-columns:4fr 1fr;
+
+
+> main{
+    padding: 2rem;
+    overflow-y: auto;
+   &::-webkit-scrollbar{
+    display: none;
+   }
+    >h1{
+       column-gap: $tertiary;
+       font: 100 2rem "Roboto"; 
+       color: aliceblue;
+    }
+}
+> aside{
+    border-radius: 50px 0px 0px 50px;
+    background-color: $primary;
+    color: $tertiary;
+   
+    box-shadow: -10px 10px 10px rgba(55, 208, 235, 0.959);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &:hover{
+        box-shadow: -10px 10px 10px rgba(217, 55, 235, 0.959);
+    }
+    
+    > h2{
+        margin: 1rem;
+        font: 100 1.8rem "Roboto" ;
+         letter-spacing: 3px;
+        &:hover{
+            font-weight: 600;
+            color:rgb(170, 170, 170);
+            scale: 1.1;
+            
+        }
+    }
+}
+
+}
+
+.cartItem{
+    background-color: $tertiary;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+         button{
+            width: 30px ;
+            height: 30px;
+            border: none;
+            background-color: $primary;
+            color: $tertiary;
+            border-radius: 5px;  
+            cursor: pointer;
+            &:hover{
+                background-color: $primarydark;
+                box-shadow: 1px 2px 1px 0px rgba(55, 196, 235, 0.959);
+            }
+         }
+         p{
+            width: 30px;
+            height: 30px;
+           display: flex;
+           align-items: center;
+           justify-content: center;  
+            }
+
+          
+    }
+    > svg{
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin:auto;
+
+        &:hover{
+            color: $secondarydark
+            ;
+
+        }
+      }
+}

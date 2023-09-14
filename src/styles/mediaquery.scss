@@ -1,0 +1,39 @@
+@import "color";
+
+
+@media screen and (max-width:800px) {
+    .cart{
+       
+        grid-template-columns:1fr;
+    
+    
+   
+    > aside{
+      
+        box-shadow: -10px 0 10px rgba(55, 208, 235, 0.959);
+        display: flex;
+        border-bottom-left-radius: 0%;
+       border-top-right-radius: 1px;
+        padding: 2rem;
+        &:hover{
+            box-shadow: -10px 0px 10px  rgba(217, 55, 235, 0.959);
+        }
+        
+        > h2{
+            margin: 1rem;
+            font: 100 1.8rem ;
+            
+            &:hover{
+                font-weight: 600;
+                color:rgb(170, 170, 170);
+                scale: 1.1;
+                
+            }
+        }
+    }
+    
+    }
+    
+   
+    
+}
